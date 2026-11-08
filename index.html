@@ -1,11 +1,277 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>SerialHub</title>
+
+    <script src="https://kit.fontawesome.com/7fe7b50c86.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet" />
 </head>
+
 <body>
-    
+    <header class="header">
+        <a class="logo" href="./index.html">
+            <span class="logo_text" aria-current="page">SerialHub.</span>
+        </a>
+
+        <nav class="nav">
+            <a href="./index.html" class="nav_link" aria-current="page">Home</a>
+            <a href="./series.html" class="nav_link">Series</a>
+            <a href="./contact.html" class="nav_link">Contact</a>
+        </nav>
+
+        <div class="input_container">
+            <i class="fa-solid fa-magnifying-glass input_icon_search" aria-hidden="true"></i>
+            <input class="search_bar" type="text" placeholder="Search shows, genres, cast..."
+                aria-label="Search shows, genres, cast" />
+            <button class="btn_clear" type="button" aria-label="Clear search">
+                <i class="fa-solid fa-xmark fa-lg" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <div class="header_actions">
+            <button class="header_btn" type="button" aria-label="Notifications">
+                <i class="fa-regular fa-bell header_btn_icon header_btn_icon_noti" aria-hidden="true"></i>
+            </button>
+            <button class="header_btn" type="button" aria-label="Profile">
+                <i class="fa-regular fa-user header_btn_icon" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="./img/screen.png" class="hero_img" alt="" />
+            <div class="hero_overlay"></div>
+            <div class="hero_content">
+                <div class="hero_text">
+                    <h1 class="hero_text_title">Lupin</h1>
+                </div>
+                <div class="hero_meta">
+                    <span class="hero_badge">Crime</span>
+                    <span class="hero_badge">Thriller</span>
+                    <span class="hero_badge">Mystery</span>
+                    <span class="hero_badge_age">16+</span>
+                    <span class="hero_badge hero_badge_rate"><i class="fa-solid fa-star fa-xs hero_icon_star"
+                            aria-hidden="true"></i><span class="hero_badge_rate_score">7.5</span></span>
+                    <span class="hero_badge_season">4 Seasons • 25 Episodes </span>
+                </div>
+                <div class="hero_text">
+                    <p class="hero_text_desc">Inspired by the adventures of Arsène Lupin, gentleman thief Assane Diop
+                        sets out to avenge his
+                        father for an injustice inflicted by a wealthy family.</p>
+                </div>
+                <div class="hero_buttons">
+                    <button class="hero_btn_watch" type="button"><i class="fa-solid fa-caret-right fa-lg"
+                            aria-hidden="true"></i>Watch Now</button>
+                    <button class="hero_btn hero_btn_details" type="button">Details</button>
+                    <button class="hero_btn hero_btn_favorite" type="button" aria-label="Add to watchlist"><i
+                            class="fa-regular fa-bookmark" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="top_ten">
+            <h2 class="top_ten_title">Top 10 Series</h2>
+
+            <div class="top_ten_slider">
+                <button class="slider_btn slider_btn_prev" type="button" aria-label="Scroll left" disabled>
+                    <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                </button>
+
+                <ol class="top_ten_list" role="list">
+
+                    <li class="top_ten_item">
+                        <a class="series_card" href="detail.html">
+                            <div class="series_card_poster">
+                                <img class="series_card_img" src="./img/Breaking_Bad.webp" alt="Breaking_Bad" loading="lazy">
+                                <div class="series_card_overlay">
+                                    <ul class="series_card_genres">
+                                        <li class="series_card_genre">Sci-Fi</li>
+                                        <li class="series_card_genre">Thrille</li>
+                                    </ul>
+                                </div>
+                                <span class="series_card_rating">
+                                     <i class="fa-solid fa-star fa-xs series_card_icon_star" aria-hidden="true"></i>8.9
+                                </span>
+                            </div>
+                            <h3 class="series_card_title">Breaking Bad</h3>
+                            <time class="series_card_date" datetime="2025">2025</time>
+                        </a>
+                    </li>
+
+                    <li class="top_ten_item">
+                        <a class="series_card" href="detail.html">
+                            <div class="series_card_poster">
+                                <img class="series_card_img" src="./img/Bandofbrothers.jpg" alt="Breaking_Bad" loading="lazy">
+                                <div class="series_card_overlay">
+                                    <ul class="series_card_genres">
+                                        <li class="series_card_genre">Sci-Fi</li>
+                                        <li class="series_card_genre">Thrille</li>
+                                    </ul>
+                                </div>
+                                <span class="series_card_rating">
+                                     <i class="fa-solid fa-star" aria-hidden="true"></i>8.9
+                                </span>
+                            </div>
+                            <h3 class="series_card_title">Band of </h3>
+                            <time class="series_card_date" datetime="2025">2025</time>
+                        </a>
+                    </li>
+
+                    <li class="top_ten_item">
+                        <a class="series_card" href="detail.html">
+                            <div class="series_card_poster">
+                                <img class="series_card_img" src="./img/Chernobyl.jpg" alt="Breaking_Bad" loading="lazy">
+                                <div class="series_card_overlay">
+                                    <ul class="series_card_genres">
+                                        <li class="series_card_genre">Sci-Fi</li>
+                                        <li class="series_card_genre">Thrille</li>
+                                    </ul>
+                                </div>
+                                <span class="series_card_rating">
+                                     <i class="fa-solid fa-star" aria-hidden="true"></i>8.9
+                                </span>
+                            </div>
+                            <h3 class="series_card_title">Some</h3>
+                            <time class="series_card_date" datetime="2025">2025</time>
+                        </a>
+                    </li>
+
+                    <li class="top_ten_item">
+                        <a class="series_card" href="detail.html">
+                            <div class="series_card_poster">
+                                <img class="series_card_img" src="./img/The_Wire.jpg" alt="Breaking_Bad" loading="lazy">
+                                <div class="series_card_overlay">
+                                    <ul class="series_card_genres">
+                                        <li class="series_card_genre">Sci-Fi</li>
+                                        <li class="series_card_genre">Thrille</li>
+                                    </ul>
+                                </div>
+                                <span class="series_card_rating">
+                                     <i class="fa-solid fa-star" aria-hidden="true"></i>8.9
+                                </span>
+                            </div>
+                            <h3 class="series_card_title">Some</h3>
+                            <time class="series_card_date" datetime="2025">2025</time>
+                        </a>
+                    </li>
+
+                    <li class="top_ten_item">
+                        <a class="series_card" href="detail.html">
+                            <div class="series_card_poster">
+                                <img class="series_card_img" src="./img/Avatar.jpg" alt="Breaking_Bad" loading="lazy">
+                                <div class="series_card_overlay">
+                                    <ul class="series_card_genres">
+                                        <li class="series_card_genre">Sci-Fi</li>
+                                        <li class="series_card_genre">Thrille</li>
+                                    </ul>
+                                </div>
+                                <span class="series_card_rating">
+                                     <i class="fa-solid fa-star" aria-hidden="true"></i>8.9
+                                </span>
+                            </div>
+                            <h3 class="series_card_title">Some</h3>
+                            <time class="series_card_date" datetime="2025">2025</time>
+                        </a>
+                    </li>
+
+                    <li class="top_ten_item">
+                        <a class="series_card" href="detail.html">
+                            <div class="series_card_poster">
+                                <img class="series_card_img" src="./img/Gameofthrones.jpg" alt="Breaking_Bad" loading="lazy">
+                                <div class="series_card_overlay">
+                                    <ul class="series_card_genres">
+                                        <li class="series_card_genre">Sci-Fi</li>
+                                        <li class="series_card_genre">Thrille</li>
+                                    </ul>
+                                </div>
+                                <span class="series_card_rating">
+                                     <i class="fa-solid fa-star" aria-hidden="true"></i>8.9
+                                </span>
+                            </div>
+                            <h3 class="series_card_title">Some</h3>
+                            <time class="series_card_date" datetime="2025">2025</time>
+                        </a>
+                    </li>
+
+                    <li class="top_ten_item">
+                        <a class="series_card" href="detail.html">
+                            <div class="series_card_poster">
+                                <img class="series_card_img" src="./img/Sopranos.jpg" alt="Breaking_Bad" loading="lazy">
+                                <div class="series_card_overlay">
+                                    <ul class="series_card_genres">
+                                        <li class="series_card_genre">Sci-Fi</li>
+                                        <li class="series_card_genre">Thrille</li>
+                                    </ul>
+                                </div>
+                                <span class="series_card_rating">
+                                     <i class="fa-solid fa-star" aria-hidden="true"></i>8.9
+                                </span>
+                            </div>
+                            <h3 class="series_card_title">Some</h3>
+                            <time class="series_card_date" datetime="2025">2025</time>
+                        </a>
+                    </li>
+
+                    <li class="top_ten_item">
+                        <a class="series_card" href="detail.html">
+                            <div class="series_card_poster">
+                                <img class="series_card_img" src="./img/Fullmetalalchemist.jpg" alt="Breaking_Bad" loading="lazy">
+                                <div class="series_card_overlay">
+                                    <ul class="series_card_genres">
+                                        <li class="series_card_genre">Sci-Fi</li>
+                                        <li class="series_card_genre">Thrille</li>
+                                    </ul>
+                                </div>
+                                <span class="series_card_rating">
+                                     <i class="fa-solid fa-star" aria-hidden="true"></i>8.9
+                                </span>
+                            </div>
+                            <h3 class="series_card_title">Some</h3>
+                            <time class="series_card_date" datetime="2025">2025</time>
+                        </a>
+                    </li>
+
+                    <li class="top_ten_item">
+                        <a class="series_card" href="detail.html">
+                            <div class="series_card_poster">
+                                <img class="series_card_img" src="./img/AOT.jpg" alt="Breaking_Bad" loading="lazy">
+                                <div class="series_card_overlay">
+                                    <ul class="series_card_genres">
+                                        <li class="series_card_genre">Sci-Fi</li>
+                                        <li class="series_card_genre">Thrille</li>
+                                    </ul>
+                                </div>
+                                <span class="series_card_rating">
+                                     <i class="fa-solid fa-star" aria-hidden="true"></i>8.9
+                                </span>
+                            </div>
+                            <h3 class="series_card_title">Some</h3>
+                            <time class="series_card_date" datetime="2025">2025</time>
+                        </a>
+                    </li>
+                </ol>
+
+                <button class="slider_btn slider_btn_next" type="button" aria-label="Scroll right">
+                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </button>
+
+            </div>
+        </section>
+
+
+
+
+
+    </main>
 </body>
+
 </html>
