@@ -37,12 +37,14 @@
         </div>
 
         <div class="header_actions">
-            <button class="header_btn" type="button" aria-label="Notifications">
+            <button id="" class="header_btn" type="button" popovertarget="notifications_panel" aria-label="Notifications">
                 <i class="fa-regular fa-bell header_btn_icon header_btn_icon_noti" aria-hidden="true"></i>
             </button>
             <button class="header_btn" type="button" aria-label="Profile">
                 <i class="fa-regular fa-user header_btn_icon" aria-hidden="true"></i>
             </button>
+            <div id="notifications_panel" class="notifications_panel" popover></div>
+            <div id="profile_panel" class="profile_panel" popover></div>
         </div>
     </header>
 
@@ -87,175 +89,209 @@
                 </button>
 
                 <ol class="top_ten_list" role="list">
-
                     <li class="top_ten_item">
                         <a class="series_card" href="detail.html">
                             <div class="series_card_poster">
-                                <img class="series_card_img" src="./img/Breaking_Bad.webp" alt="Breaking_Bad" loading="lazy">
+                                <img class="series_card_img" src="./img/Breaking_Bad.webp" alt="BreakingBad"
+                                    loading="lazy">
                                 <div class="series_card_overlay">
+                                    <span class="series_card_rating">
+                                        <i class="fa-solid fa-star fa-xs series_card_icon_star"
+                                            aria-hidden="true"></i>9.5
+                                    </span>
                                     <ul class="series_card_genres">
-                                        <li class="series_card_genre">Sci-Fi</li>
-                                        <li class="series_card_genre">Thrille</li>
+                                        <li class="series_card_genre">Crime</li>
+                                        <li class="series_card_genre">Drama</li>
                                     </ul>
                                 </div>
-                                <span class="series_card_rating">
-                                     <i class="fa-solid fa-star fa-xs series_card_icon_star" aria-hidden="true"></i>8.9
-                                </span>
                             </div>
                             <h3 class="series_card_title">Breaking Bad</h3>
-                            <time class="series_card_date" datetime="2025">2025</time>
+                            <time class="series_card_date" datetime="2008">2008</time>
                         </a>
                     </li>
 
                     <li class="top_ten_item">
                         <a class="series_card" href="detail.html">
                             <div class="series_card_poster">
-                                <img class="series_card_img" src="./img/Bandofbrothers.jpg" alt="Breaking_Bad" loading="lazy">
+                                <img class="series_card_img" src="./img/Bandofbrothers.jpg" alt="BandofBrothers"
+                                    loading="lazy">
                                 <div class="series_card_overlay">
+                                    <span class="series_card_rating">
+                                        <i class="fa-solid fa-star fa-xs series_card_icon_star"
+                                            aria-hidden="true"></i>9.4
+                                    </span>
                                     <ul class="series_card_genres">
-                                        <li class="series_card_genre">Sci-Fi</li>
-                                        <li class="series_card_genre">Thrille</li>
+                                        <li class="series_card_genre">War</li>
+                                        <li class="series_card_genre">Drama</li>
                                     </ul>
                                 </div>
-                                <span class="series_card_rating">
-                                     <i class="fa-solid fa-star" aria-hidden="true"></i>8.9
-                                </span>
                             </div>
-                            <h3 class="series_card_title">Band of </h3>
-                            <time class="series_card_date" datetime="2025">2025</time>
+                            <h3 class="series_card_title">Band of Brothers</h3>
+                            <time class="series_card_date" datetime="2001">2001</time>
                         </a>
                     </li>
 
                     <li class="top_ten_item">
                         <a class="series_card" href="detail.html">
                             <div class="series_card_poster">
-                                <img class="series_card_img" src="./img/Chernobyl.jpg" alt="Breaking_Bad" loading="lazy">
+                                <img class="series_card_img" src="./img/Chernobyl.jpg" alt="Chernobyl" loading="lazy">
                                 <div class="series_card_overlay">
+                                    <span class="series_card_rating">
+                                        <i class="fa-solid fa-star fa-xs series_card_icon_star"
+                                            aria-hidden="true"></i>9.3
+                                    </span>
                                     <ul class="series_card_genres">
-                                        <li class="series_card_genre">Sci-Fi</li>
-                                        <li class="series_card_genre">Thrille</li>
+                                        <li class="series_card_genre">Drama</li>
+                                        <li class="series_card_genre">History</li>
                                     </ul>
                                 </div>
-                                <span class="series_card_rating">
-                                     <i class="fa-solid fa-star" aria-hidden="true"></i>8.9
-                                </span>
                             </div>
-                            <h3 class="series_card_title">Some</h3>
-                            <time class="series_card_date" datetime="2025">2025</time>
+                            <h3 class="series_card_title">Chernobyl</h3>
+                            <time class="series_card_date" datetime="2019">2019</time>
                         </a>
                     </li>
 
                     <li class="top_ten_item">
                         <a class="series_card" href="detail.html">
                             <div class="series_card_poster">
-                                <img class="series_card_img" src="./img/The_Wire.jpg" alt="Breaking_Bad" loading="lazy">
+                                <img class="series_card_img" src="./img/The_Wire.jpg" alt="TheWire" loading="lazy">
                                 <div class="series_card_overlay">
+                                    <span class="series_card_rating">
+                                        <i class="fa-solid fa-star fa-xs series_card_icon_star"
+                                            aria-hidden="true"></i>9.3
+                                    </span>
                                     <ul class="series_card_genres">
-                                        <li class="series_card_genre">Sci-Fi</li>
-                                        <li class="series_card_genre">Thrille</li>
+                                        <li class="series_card_genre">Drama</li>
+                                        <li class="series_card_genre">Crime</li>
                                     </ul>
                                 </div>
-                                <span class="series_card_rating">
-                                     <i class="fa-solid fa-star" aria-hidden="true"></i>8.9
-                                </span>
                             </div>
-                            <h3 class="series_card_title">Some</h3>
-                            <time class="series_card_date" datetime="2025">2025</time>
+                            <h3 class="series_card_title">The Wire</h3>
+                            <time class="series_card_date" datetime="2002">2002</time>
                         </a>
                     </li>
 
                     <li class="top_ten_item">
                         <a class="series_card" href="detail.html">
                             <div class="series_card_poster">
-                                <img class="series_card_img" src="./img/Avatar.jpg" alt="Breaking_Bad" loading="lazy">
+                                <img class="series_card_img" src="./img/Avatar.jpg" alt="Avatar:TheLastAirbender"
+                                    loading="lazy">
                                 <div class="series_card_overlay">
+                                    <span class="series_card_rating">
+                                        <i class="fa-solid fa-star fa-xs series_card_icon_star"
+                                            aria-hidden="true"></i>9.3
+                                    </span>
                                     <ul class="series_card_genres">
-                                        <li class="series_card_genre">Sci-Fi</li>
-                                        <li class="series_card_genre">Thrille</li>
+                                        <li class="series_card_genre">Animation</li>
+                                        <li class="series_card_genre">Action</li>
                                     </ul>
                                 </div>
-                                <span class="series_card_rating">
-                                     <i class="fa-solid fa-star" aria-hidden="true"></i>8.9
-                                </span>
                             </div>
-                            <h3 class="series_card_title">Some</h3>
-                            <time class="series_card_date" datetime="2025">2025</time>
+                            <h3 class="series_card_title">Avatar: The Last Airbender</h3>
+                            <time class="series_card_date" datetime="2005">2005</time>
                         </a>
                     </li>
 
                     <li class="top_ten_item">
                         <a class="series_card" href="detail.html">
                             <div class="series_card_poster">
-                                <img class="series_card_img" src="./img/Gameofthrones.jpg" alt="Breaking_Bad" loading="lazy">
+                                <img class="series_card_img" src="./img/Game_of_Thrones.jpg" alt="GameofThrones"
+                                    loading="lazy">
                                 <div class="series_card_overlay">
+                                    <span class="series_card_rating">
+                                        <i class="fa-solid fa-star fa-xs series_card_icon_star"
+                                            aria-hidden="true"></i>9.2
+                                    </span>
                                     <ul class="series_card_genres">
-                                        <li class="series_card_genre">Sci-Fi</li>
-                                        <li class="series_card_genre">Thrille</li>
+                                        <li class="series_card_genre">Action</li>
+                                        <li class="series_card_genre">Adventure</li>
                                     </ul>
                                 </div>
-                                <span class="series_card_rating">
-                                     <i class="fa-solid fa-star" aria-hidden="true"></i>8.9
-                                </span>
                             </div>
-                            <h3 class="series_card_title">Some</h3>
-                            <time class="series_card_date" datetime="2025">2025</time>
+                            <h3 class="series_card_title">Game of Thrones</h3>
+                            <time class="series_card_date" datetime="2011">2011</time>
                         </a>
                     </li>
 
                     <li class="top_ten_item">
                         <a class="series_card" href="detail.html">
                             <div class="series_card_poster">
-                                <img class="series_card_img" src="./img/Sopranos.jpg" alt="Breaking_Bad" loading="lazy">
+                                <img class="series_card_img" src="./img/Sopranos.jpg" alt="TheSopranos" loading="lazy">
                                 <div class="series_card_overlay">
+                                    <span class="series_card_rating">
+                                        <i class="fa-solid fa-star fa-xs series_card_icon_star"
+                                            aria-hidden="true"></i>9.2
+                                    </span>
                                     <ul class="series_card_genres">
-                                        <li class="series_card_genre">Sci-Fi</li>
-                                        <li class="series_card_genre">Thrille</li>
+                                        <li class="series_card_genre">Crime</li>
+                                        <li class="series_card_genre">Drama</li>
                                     </ul>
                                 </div>
-                                <span class="series_card_rating">
-                                     <i class="fa-solid fa-star" aria-hidden="true"></i>8.9
-                                </span>
                             </div>
-                            <h3 class="series_card_title">Some</h3>
-                            <time class="series_card_date" datetime="2025">2025</time>
+                            <h3 class="series_card_title">The Sopranos</h3>
+                            <time class="series_card_date" datetime="1999">1999</time>
                         </a>
                     </li>
 
                     <li class="top_ten_item">
                         <a class="series_card" href="detail.html">
                             <div class="series_card_poster">
-                                <img class="series_card_img" src="./img/Fullmetalalchemist.jpg" alt="Breaking_Bad" loading="lazy">
+                                <img class="series_card_img" src="./img/Fullmetalalchemist.jpg"
+                                    alt="FullmetalAlchemist:Brotherhood" loading="lazy">
                                 <div class="series_card_overlay">
+                                    <span class="series_card_rating">
+                                        <i class="fa-solid fa-star fa-xs series_card_icon_star"
+                                            aria-hidden="true"></i>9.1
+                                    </span>
                                     <ul class="series_card_genres">
-                                        <li class="series_card_genre">Sci-Fi</li>
-                                        <li class="series_card_genre">Thrille</li>
+                                        <li class="series_card_genre">Animation</li>
+                                        <li class="series_card_genre">Action</li>
                                     </ul>
                                 </div>
-                                <span class="series_card_rating">
-                                     <i class="fa-solid fa-star" aria-hidden="true"></i>8.9
-                                </span>
                             </div>
-                            <h3 class="series_card_title">Some</h3>
-                            <time class="series_card_date" datetime="2025">2025</time>
+                            <h3 class="series_card_title">Fullmetal Alchemist: Brotherhood</h3>
+                            <time class="series_card_date" datetime="2009">2009</time>
                         </a>
                     </li>
 
                     <li class="top_ten_item">
                         <a class="series_card" href="detail.html">
                             <div class="series_card_poster">
-                                <img class="series_card_img" src="./img/AOT.jpg" alt="Breaking_Bad" loading="lazy">
+                                <img class="series_card_img" src="./img/AOT.jpg" alt="AttackonTitan" loading="lazy">
                                 <div class="series_card_overlay">
+                                    <span class="series_card_rating">
+                                        <i class="fa-solid fa-star fa-xs series_card_icon_star"
+                                            aria-hidden="true"></i>9.1
+                                    </span>
                                     <ul class="series_card_genres">
-                                        <li class="series_card_genre">Sci-Fi</li>
-                                        <li class="series_card_genre">Thrille</li>
+                                        <li class="series_card_genre">Animation</li>
+                                        <li class="series_card_genre">Action</li>
                                     </ul>
                                 </div>
-                                <span class="series_card_rating">
-                                     <i class="fa-solid fa-star" aria-hidden="true"></i>8.9
-                                </span>
                             </div>
-                            <h3 class="series_card_title">Some</h3>
-                            <time class="series_card_date" datetime="2025">2025</time>
+                            <h3 class="series_card_title">Attack on Titan</h3>
+                            <time class="series_card_date" datetime="2013">2013</time>
+                        </a>
+                    </li>
+
+                    <li class="top_ten_item">
+                        <a class="series_card" href="detail.html">
+                            <div class="series_card_poster">
+                                <img class="series_card_img" src="./img/Rick_and_Morty.jpg" alt="RickandMorty"
+                                    loading="lazy">
+                                <div class="series_card_overlay">
+                                    <span class="series_card_rating">
+                                        <i class="fa-solid fa-star fa-xs series_card_icon_star"
+                                            aria-hidden="true"></i>9.0
+                                    </span>
+                                    <ul class="series_card_genres">
+                                        <li class="series_card_genre">Animation</li>
+                                        <li class="series_card_genre">Comedy</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3 class="series_card_title">Rick and Morty</h3>
+                            <time class="series_card_date" datetime="2013">2013</time>
                         </a>
                     </li>
                 </ol>
