@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="…">
+    <title>SerialHub</title>
+
+    <script src="https://kit.fontawesome.com/7fe7b50c86.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header">
+        <a class="logo" href="./index.html" aria-label="SerialHub, home">
+            <svg class="logo_svg" viewBox="0 0 140 40" height="40" aria-hidden="true">
+                <text class="logo_text" x="0" y="29">SerialHub.</text>
+            </svg>
+        </a>
+
+        <nav class="nav">
+            <a href="./index.html" class="nav_link" >Home</a>
+            <a href="./test.html" class="nav_link" aria-current="page">Series</a>
+            <a href="./contact.html" class="nav_link">Contact</a>
+        </nav>
+
+        <div class="input_container">
+            <i class="fa-solid fa-magnifying-glass input_icon_search" aria-hidden="true"></i>
+            <input class="search_bar" type="text" placeholder="Search shows, genres, cast..."
+                aria-label="Search shows, genres, cast" />
+            <button class="btn_clear" type="button" aria-label="Clear search">
+                <i class="fa-solid fa-xmark fa-lg" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <div class="header_actions">
+
+            <button class="header_btn" type="button" popovertarget="notifications_panel" aria-label="Notifications">
+                <i class="fa-regular fa-bell header_btn_icon header_btn_icon_noti" aria-hidden="true"></i>
+            </button>
+
+            <button class="header_btn" type="button" popovertarget="profile_panel" aria-label="Profile">
+                <i class="fa-regular fa-user header_btn_icon" aria-hidden="true"></i>
+            </button>
+
+            <div id="notifications_panel" class="header_panel" popover>
+                <div class="notifications_header">
+                    <h2 class="notifications_heading">Notifications</h2>
+                    <span class="notifications_count">5</span>
+                    <button class="notifications_mark" type="button">Mark all read</button>
+                    <button class="notifications_close" type="button" popovertarget="notifications_panel"
+                        popovertargetaction="hide" aria-label="Close"><i class="fa-solid fa-x"
+                            aria-hidden="true"></i></button>
+                </div>
+                <ul class="notifications_list">
+                    <li class="notifications_item notifications_item_unread">
+                        <a class="notifications_link" href="./detail.html">
+                            <img class="notifications_img" alt="" src="./img/Vision.jpg" loading="lazy">
+                            <div class="notifications_text">
+                                <div class="notifications_row">
+                                    <span class="notifications_item_title">VisionQuest</span>
+                                    <span class="notifications_item_desc">Season 1, Episode 9</span>
+                                </div>
+                                <div class="notifications_meta">
+                                    <span class="notifications_item_time">2 hours ago</span>
+                                    <span class="notifications_item_badge">New episode</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="notifications_item notifications_item_unread">
+                        <a class="notifications_link" href="./detail.html">
+                            <img class="notifications_img" alt="" src="./img/Jojo.webp" loading="lazy">
+                            <div class="notifications_text">
+                                <div class="notifications_row">
+                                    <span class="notifications_item_title">JoJo's Bizarre Adventure: Steel Ball
+                                        Run 000000000000000</span>
+                                    <span class="notifications_item_desc">Season 6, Episode 8</span>
+                                </div>
+                                <div class="notifications_meta">
+                                    <span class="notifications_item_time">1 day ago</span>
+                                    <span class="notifications_item_badge">New episode</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="notifications_item notifications_item_unread">
+                        <a class="notifications_link" href="./detail.html">
+                            <img class="notifications_img" alt="" src="./img/Dexter.jpg" loading="lazy">
+                            <div class="notifications_text">
+                                <div class="notifications_row">
+                                    <span class="notifications_item_title">Dexter: Resurrection</span>
+                                    <span class="notifications_item_desc">Season 2, Episode 3</span>
+                                </div>
+                                <div class="notifications_meta">
+                                    <span class="notifications_item_time">2 days ago</span>
+                                    <span class="notifications_item_badge">New episode</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="notifications_item notifications_item_unread">
+                        <a class="notifications_link" href="./detail.html">
+                            <img class="notifications_img" alt="" src="./img/Tulsa_King.jpg" loading="lazy">
+                            <div class="notifications_text">
+                                <div class="notifications_row">
+                                    <span class="notifications_item_title">Tulsa King</span>
+                                    <span class="notifications_item_desc">Season 4, Episode 5</span>
+                                </div>
+                                <div class="notifications_meta">
+                                    <span class="notifications_item_time">2 days ago</span>
+                                    <span class="notifications_item_badge">New episode</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="notifications_item notifications_item_unread">
+                        <a class="notifications_link" href="./detail.html">
+                            <img class="notifications_img" alt="" src="./img/DragonBall.jpg" loading="lazy">
+                            <div class="notifications_text">
+                                <div class="notifications_row">
+                                    <span class="notifications_item_title">Dragon Ball Super: Beerus</span>
+                                    <span class="notifications_item_desc">Season 1, Episode 6</span>
+                                </div>
+                                <div class="notifications_meta">
+                                    <span class="notifications_item_time">4 days ago</span>
+                                    <span class="notifications_item_badge">New episode</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="profile_panel" class="header_panel" popover>
+                <div class="profile_header">
+                    <img class="profile_img" src="./img/Profile.png" alt="Profile" loading="lazy">
+                    <div class="profile_info">
+                        <span class="profile_name">Luke Musch</span>
+                        <span class="profile_email">jozeflisko45sdaasd@gmail.com</span>
+                        <span class="profile_email">lukemuch@gmail.com12121212121212121212121212121212121</span>
+                    </div>
+                </div>
+                <hr class="profile_divider">
+                <div>
+                    <ul class="profile_menu">
+                        <li class="profile_menu_item">
+                            <button class="profile_menu_btn" type="button">
+                                <i class="fa-regular fa-user profile_menu_icon" aria-hidden="true"></i>
+                                <span class="profile_menu_text">Profile</span>
+                            </button>
+                        </li>
+                        <li class="profile_menu_item">
+                            <button class="profile_menu_btn" type="button">
+                                <i class="fa-regular fa-heart profile_menu_icon" aria-hidden="true"></i>
+                                <span class="profile_menu_text">My watchlist</span>
+                            </button>
+                        </li>
+                        <li class="profile_menu_item">
+                            <button class="profile_menu_btn" type="button">
+                                <i class="fa-solid fa-wallet profile_menu_icon" aria-hidden="true"></i>
+                                <span class="profile_menu_text">Subscription</span>
+                            </button>
+                        </li>
+                        <li class="profile_menu_item">
+                            <button class="profile_menu_btn" type="button">
+                                <i class="fa-solid fa-gear profile_menu_icon" aria-hidden="true"></i>
+                                <span class="profile_menu_text">Settings</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="profile_divider">
+                <div class="profile_authentication">
+                    <button type="button" class="profile_authentication_btn"><i
+                            class="fa-solid fa-arrow-right-from-bracket profile_authentication_icon"
+                            aria-hidden="true"></i>Sign
+                        in</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="./img/screen.png" class="hero_img" alt="" />
+            <div class="hero_overlay"></div>
+            <div class="hero_content">
+                <div class="hero_text">
+                    <h1 class="hero_text_title">Lupin</h1>
+                </div>
+                <div class="hero_meta">
+                    <span class="hero_badge">Crime</span>
+                    <span class="hero_badge">Thriller</span>
+                    <span class="hero_badge">Mystery</span>
+                    <span class="hero_badge_age">16+</span>
+                    <span class="hero_badge hero_badge_rate"><i class="fa-solid fa-star fa-xs hero_icon_star"
+                            aria-hidden="true"></i><span class="hero_badge_rate_score">7.5</span></span>
+                    <span class="hero_badge_season">4 Seasons • 25 Episodes </span>
+                </div>
+                <div class="hero_text">
+                    <p class="hero_text_desc">Inspired by the adventures of Arsène Lupin, gentleman thief Assane Diop
+                        sets out to avenge his
+                        father for an injustice inflicted by a wealthy family.</p>
+                </div>
+                <div class="hero_buttons">
+                    <button class="hero_btn_watch" type="button"><i class="fa-solid fa-caret-right fa-lg"
+                            aria-hidden="true"></i>Watch Now</button>
+                    <button class="hero_btn hero_btn_details" type="button">Details</button>
+                    <button class="hero_btn hero_btn_favorite" type="button" aria-label="Add to watchlist"><i
+                            class="fa-regular fa-bookmark" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

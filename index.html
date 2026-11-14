@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="…">
     <title>SerialHub</title>
 
     <script src="https://kit.fontawesome.com/7fe7b50c86.js" crossorigin="anonymous"></script>
@@ -17,8 +18,10 @@
 
 <body>
     <header class="header">
-        <a class="logo" href="./index.html">
-            <span class="logo_text" aria-current="page">SerialHub.</span>
+        <a class="logo" href="./index.html" aria-label="SerialHub, home">
+            <svg class="logo_svg" viewBox="0 0 120 45" aria-hidden="true">
+                <text class="logo_text" x="0" y="29">SerialHub.</text>
+            </svg>
         </a>
 
         <nav class="nav">
@@ -37,14 +40,149 @@
         </div>
 
         <div class="header_actions">
-            <button id="" class="header_btn" type="button" popovertarget="notifications_panel" aria-label="Notifications">
+
+            <button class="header_btn" type="button" popovertarget="notifications_panel" aria-label="Notifications">
                 <i class="fa-regular fa-bell header_btn_icon header_btn_icon_noti" aria-hidden="true"></i>
             </button>
-            <button class="header_btn" type="button" aria-label="Profile">
+
+            <button class="header_btn" type="button" popovertarget="profile_panel" aria-label="Profile">
                 <i class="fa-regular fa-user header_btn_icon" aria-hidden="true"></i>
             </button>
-            <div id="notifications_panel" class="notifications_panel" popover></div>
-            <div id="profile_panel" class="profile_panel" popover></div>
+
+            <div id="notifications_panel" class="header_panel" popover>
+                <div class="notifications_header">
+                    <h2 class="notifications_heading">Notifications</h2>
+                    <span class="notifications_count">5</span>
+                    <button class="notifications_mark" type="button">Mark all read</button>
+                    <button class="notifications_close" type="button" popovertarget="notifications_panel"
+                        popovertargetaction="hide" aria-label="Close"><i class="fa-solid fa-x"
+                            aria-hidden="true"></i></button>
+                </div>
+                <ul class="notifications_list">
+                    <li class="notifications_item notifications_item_unread">
+                        <a class="notifications_link" href="./detail.html">
+                            <img class="notifications_img" alt="" src="./img/Vision.jpg" loading="lazy">
+                            <div class="notifications_text">
+                                <div class="notifications_row">
+                                    <span class="notifications_item_title">VisionQuest</span>
+                                    <span class="notifications_item_desc">Season 1, Episode 9</span>
+                                </div>
+                                <div class="notifications_meta">
+                                    <span class="notifications_item_time">2 hours ago</span>
+                                    <span class="notifications_item_badge">New episode</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="notifications_item notifications_item_unread">
+                        <a class="notifications_link" href="./detail.html">
+                            <img class="notifications_img" alt="" src="./img/Jojo.webp" loading="lazy">
+                            <div class="notifications_text">
+                                <div class="notifications_row">
+                                    <span class="notifications_item_title">JoJo's Bizarre Adventure: Steel Ball
+                                        Run 000000000000000</span>
+                                    <span class="notifications_item_desc">Season 6, Episode 8</span>
+                                </div>
+                                <div class="notifications_meta">
+                                    <span class="notifications_item_time">1 day ago</span>
+                                    <span class="notifications_item_badge">New episode</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="notifications_item notifications_item_unread">
+                        <a class="notifications_link" href="./detail.html">
+                            <img class="notifications_img" alt="" src="./img/Dexter.jpg" loading="lazy">
+                            <div class="notifications_text">
+                                <div class="notifications_row">
+                                    <span class="notifications_item_title">Dexter: Resurrection</span>
+                                    <span class="notifications_item_desc">Season 2, Episode 3</span>
+                                </div>
+                                <div class="notifications_meta">
+                                    <span class="notifications_item_time">2 days ago</span>
+                                    <span class="notifications_item_badge">New episode</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="notifications_item notifications_item_unread">
+                        <a class="notifications_link" href="./detail.html">
+                            <img class="notifications_img" alt="" src="./img/Tulsa_King.jpg" loading="lazy">
+                            <div class="notifications_text">
+                                <div class="notifications_row">
+                                    <span class="notifications_item_title">Tulsa King</span>
+                                    <span class="notifications_item_desc">Season 4, Episode 5</span>
+                                </div>
+                                <div class="notifications_meta">
+                                    <span class="notifications_item_time">2 days ago</span>
+                                    <span class="notifications_item_badge">New episode</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="notifications_item notifications_item_unread">
+                        <a class="notifications_link" href="./detail.html">
+                            <img class="notifications_img" alt="" src="./img/DragonBall.jpg" loading="lazy">
+                            <div class="notifications_text">
+                                <div class="notifications_row">
+                                    <span class="notifications_item_title">Dragon Ball Super: Beerus</span>
+                                    <span class="notifications_item_desc">Season 1, Episode 6</span>
+                                </div>
+                                <div class="notifications_meta">
+                                    <span class="notifications_item_time">4 days ago</span>
+                                    <span class="notifications_item_badge">New episode</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="profile_panel" class="header_panel" popover>
+                <div class="profile_header">
+                    <img class="profile_img" src="./img/Profile.png" alt="Profile" loading="lazy">
+                    <div class="profile_info">
+                        <span class="profile_name">Luke Musch</span>
+                        <span class="profile_email">lukemusch154@gmail.com</span>
+                    </div>
+                </div>
+                <hr class="profile_divider">
+                <div>
+                    <ul class="profile_menu">
+                        <li class="profile_menu_item">
+                            <button class="profile_menu_btn" type="button">
+                                <i class="fa-regular fa-user profile_menu_icon" aria-hidden="true"></i>
+                                <span class="profile_menu_text">Profile</span>
+                            </button>
+                        </li>
+                        <li class="profile_menu_item">
+                            <button class="profile_menu_btn" type="button">
+                                <i class="fa-regular fa-heart profile_menu_icon" aria-hidden="true"></i>
+                                <span class="profile_menu_text">My watchlist</span>
+                            </button>
+                        </li>
+                        <li class="profile_menu_item">
+                            <button class="profile_menu_btn" type="button">
+                                <i class="fa-solid fa-wallet profile_menu_icon" aria-hidden="true"></i>
+                                <span class="profile_menu_text">Subscription</span>
+                            </button>
+                        </li>
+                        <li class="profile_menu_item">
+                            <button class="profile_menu_btn" type="button">
+                                <i class="fa-solid fa-gear profile_menu_icon" aria-hidden="true"></i>
+                                <span class="profile_menu_text">Settings</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="profile_divider">
+                <div class="profile_authentication">
+                    <button type="button" class="profile_authentication_btn"><i
+                            class="fa-solid fa-arrow-right-from-bracket profile_authentication_icon"
+                            aria-hidden="true"></i>Sign
+                        in</button>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -92,7 +230,7 @@
                     <li class="top_ten_item">
                         <a class="series_card" href="detail.html">
                             <div class="series_card_poster">
-                                <img class="series_card_img" src="./img/Breaking_Bad.webp" alt="BreakingBad"
+                                <img class="series_card_img" src="./img/Breaking_Bad.webp" alt="Breaking Bad"
                                     loading="lazy">
                                 <div class="series_card_overlay">
                                     <span class="series_card_rating">
@@ -113,7 +251,7 @@
                     <li class="top_ten_item">
                         <a class="series_card" href="detail.html">
                             <div class="series_card_poster">
-                                <img class="series_card_img" src="./img/Bandofbrothers.jpg" alt="BandofBrothers"
+                                <img class="series_card_img" src="./img/Bandofbrothers.jpg" alt="Band of Brothers"
                                     loading="lazy">
                                 <div class="series_card_overlay">
                                     <span class="series_card_rating">
@@ -154,7 +292,7 @@
                     <li class="top_ten_item">
                         <a class="series_card" href="detail.html">
                             <div class="series_card_poster">
-                                <img class="series_card_img" src="./img/The_Wire.jpg" alt="TheWire" loading="lazy">
+                                <img class="series_card_img" src="./img/The_Wire.jpg" alt="The Wire" loading="lazy">
                                 <div class="series_card_overlay">
                                     <span class="series_card_rating">
                                         <i class="fa-solid fa-star fa-xs series_card_icon_star"
@@ -174,7 +312,7 @@
                     <li class="top_ten_item">
                         <a class="series_card" href="detail.html">
                             <div class="series_card_poster">
-                                <img class="series_card_img" src="./img/Avatar.jpg" alt="Avatar:TheLastAirbender"
+                                <img class="series_card_img" src="./img/Avatar.jpg" alt="Avatar: The Last Airbender"
                                     loading="lazy">
                                 <div class="series_card_overlay">
                                     <span class="series_card_rating">
@@ -195,7 +333,7 @@
                     <li class="top_ten_item">
                         <a class="series_card" href="detail.html">
                             <div class="series_card_poster">
-                                <img class="series_card_img" src="./img/Game_of_Thrones.jpg" alt="GameofThrones"
+                                <img class="series_card_img" src="./img/Game_of_Thrones.jpg" alt="Game of Thrones"
                                     loading="lazy">
                                 <div class="series_card_overlay">
                                     <span class="series_card_rating">
@@ -216,7 +354,7 @@
                     <li class="top_ten_item">
                         <a class="series_card" href="detail.html">
                             <div class="series_card_poster">
-                                <img class="series_card_img" src="./img/Sopranos.jpg" alt="TheSopranos" loading="lazy">
+                                <img class="series_card_img" src="./img/Sopranos.jpg" alt="The Sopranos" loading="lazy">
                                 <div class="series_card_overlay">
                                     <span class="series_card_rating">
                                         <i class="fa-solid fa-star fa-xs series_card_icon_star"
@@ -237,7 +375,7 @@
                         <a class="series_card" href="detail.html">
                             <div class="series_card_poster">
                                 <img class="series_card_img" src="./img/Fullmetalalchemist.jpg"
-                                    alt="FullmetalAlchemist:Brotherhood" loading="lazy">
+                                    alt="Fullmetal Alchemist: Brotherhood" loading="lazy">
                                 <div class="series_card_overlay">
                                     <span class="series_card_rating">
                                         <i class="fa-solid fa-star fa-xs series_card_icon_star"
@@ -257,7 +395,7 @@
                     <li class="top_ten_item">
                         <a class="series_card" href="detail.html">
                             <div class="series_card_poster">
-                                <img class="series_card_img" src="./img/AOT.jpg" alt="AttackonTitan" loading="lazy">
+                                <img class="series_card_img" src="./img/AOT.jpg" alt="Attack on Titan" loading="lazy">
                                 <div class="series_card_overlay">
                                     <span class="series_card_rating">
                                         <i class="fa-solid fa-star fa-xs series_card_icon_star"
@@ -277,7 +415,7 @@
                     <li class="top_ten_item">
                         <a class="series_card" href="detail.html">
                             <div class="series_card_poster">
-                                <img class="series_card_img" src="./img/Rick_and_Morty.jpg" alt="RickandMorty"
+                                <img class="series_card_img" src="./img/Rick_and_Morty.jpg" alt="Rick and Morty"
                                     loading="lazy">
                                 <div class="series_card_overlay">
                                     <span class="series_card_rating">
@@ -303,11 +441,19 @@
             </div>
         </section>
 
+        <section>
 
 
+
+
+        </section>
 
 
     </main>
+
+    <footer>
+
+    </footer>
 </body>
 
 </html>
